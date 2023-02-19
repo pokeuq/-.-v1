@@ -81,7 +81,7 @@ a {
 }
 
 #text:has(.fancy:hover) .word:not(.fancy:hover) {
-  filter: brightness(0.2) blur(5px);
+  filter: brightness(0.3) blur(3.5px);
 }
 
 .fancy span {
