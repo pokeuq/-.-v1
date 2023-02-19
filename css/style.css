@@ -1,8 +1,9 @@
 :root {
-  --main: rgb(196, 196, 196);  
+  --main: rgb(254, 249, 237);  
   --pink: rgb(181, 137, 214);
   --blue: rgb(58, 34, 210);
-  --purp: rgb(106, 53, 156)
+  --purp: rgb(106, 53, 156);
+  --tg: rgb(0,0,0)
 }
 
 @keyframes float {
@@ -71,7 +72,7 @@ body {
   font-family: "Shegisha";
   margin: 0rem;
   text-transform: uppercase;
-  transition: 250ms;
+  transition: .7s;
   cursor: pointer;
 }
 
@@ -90,7 +91,9 @@ a {
 .fancy > .outer {
   transition: transform 350ms ease;
 }
-
+.word:hover{
+  transform: scale(1.08);
+}
 .fancy:hover > .outer {
   transition-duration: 800ms;
 }
@@ -163,4 +166,6 @@ a {
 #link,#channel-link{
   font-family: 'Shantell Sans';
 }
-/* -- YouTube Link Styles -- */
+#link{
+  
+}
