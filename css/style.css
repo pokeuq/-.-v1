@@ -72,7 +72,7 @@ body {
   font-family: "Shegisha";
   margin: 0rem;
   text-transform: uppercase;
-  transition: .3s;
+  transition: .7s;
   cursor: pointer;
 }
 
@@ -87,7 +87,9 @@ a {
 .fancy span {
   display: inline-block;
 }
-
+.text:hover:hover > :not(:hover){
+  filter:blur(10px)
+}
 .fancy > .outer {
   transition: transform 350ms ease;
 }
@@ -163,9 +165,19 @@ a {
 .fancy:hover > .outer:nth-child(12) {
   transform: translate(40%, -10%) rotate(-10deg);
 }
-#link,#channel-link{
+#link, #channel-link{
+  position: relative;
+	top: -10px;
+  transition: .125s;
+  transform: scale(1);
   font-family: 'Shantell Sans';
+  text-shadow: 0px 1px 0px var(--purp), 0px 2px 0px var(--purp), 0px 3px 0px var(--purp),
+		0px 4px 0px var(--purp), 0px 5px 0px var(--purp), 0px 6px 0px var(--purp),
+		0px 7px 0px var(--purp), 0px 8px 5px var(--purp);
 }
-#link{
-  
+#link:hover,#channel-link:hover{
+  top: 0px;
+  text-shadow: 0px 0px 0px var(--purp), 0px 0px 0px var(--purp), 0px 0px 0px var(--purp),
+		0px 0px 0px var(--purp), 0px 0px 0px var(--purp), 0px 0px 0px var(--purp),
+		0px 0px 0px var(--purp), 0px 0px 0px var(--purp);
 }
