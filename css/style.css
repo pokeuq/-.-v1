@@ -1,9 +1,10 @@
 :root {
-  --main: rgb(254, 249, 237);  
+  --main: rgb(237, 237, 237);  
   --pink: rgb(181, 137, 214);
   --blue: rgb(58, 34, 210);
   --purp: rgb(106, 53, 156);
-  --tg: rgb(0,0,0)
+  --tg: rgb(0,0,0);
+  --color-links: #d9a5b3;
 }
 
 @keyframes float {
@@ -56,6 +57,18 @@ body {
       url('../fonts/NavyculaFont-Bold.ttf') format('ttf');
   font-weight: normal;
 }
+
+@font-face {
+  font-family: 'Royce';
+  src: url('../fonts/Royce-Black.otf') format('otf');
+  src: url('../fonts/Royce-Bold.otf') format('otf'),
+     url('../fonts/Royce-Extrabold.otf') format('otf'),
+     url('../fonts/Royce-Medium.otf') format('otf'),
+     url('../fonts/Royce-Regular.otf') format('otf');
+  font-style: normal;
+  font-weight: normal;
+}
+
 .line {
   display: flex;
   justify-content: space-between;
@@ -69,11 +82,12 @@ body {
 .word {
   color: var(--main);
   font-size: clamp(2rem, 8vw, 11.5rem);
-  font-family: "Shegisha";
+  font-family: "Royce";
   margin: 0rem;
   text-transform: uppercase;
   transition: .7s;
   cursor: pointer;
+  font-weight: 500;
 }
 
 a {
@@ -166,18 +180,20 @@ a {
   transform: translate(40%, -10%) rotate(-10deg);
 }
 #link, #channel-link{
+  color: #FCF6F5FF;
   position: relative;
 	top: -10px;
   transition: .125s;
   transform: scale(1);
-  font-family: 'Shantell Sans';
-  text-shadow: 0px 1px 0px var(--purp), 0px 2px 0px var(--purp), 0px 3px 0px var(--purp),
-		0px 4px 0px var(--purp), 0px 5px 0px var(--purp), 0px 6px 0px var(--purp),
-		0px 7px 0px var(--purp), 0px 8px 5px var(--purp);
+  font-family: "Royce";
+  text-shadow: 0px 1px 0px #89ABE3FF, 0px 2px 0px #89ABE3FF, 0px 3px 0px #89ABE3FF,
+		0px 4px 0px #89ABE3FF, 0px 5px 0px #89ABE3FF, 0px 6px 0px #89ABE3FF,
+		0px 7px 0px #89ABE3FF, 0px 8px 5px #89ABE3FF;
 }
+
 #link:hover,#channel-link:hover{
   top: 0px;
-  text-shadow: 0px 0px 0px var(--purp), 0px 0px 0px var(--purp), 0px 0px 0px var(--purp),
-		0px 0px 0px var(--purp), 0px 0px 0px var(--purp), 0px 0px 0px var(--purp),
-		0px 0px 0px var(--purp), 0px 0px 0px var(--purp);
+  text-shadow: 0px 0px 0px #89ABE3FF, 0px 0px 0px #89ABE3FF, 0px 0px 0px #89ABE3FF,
+		0px 0px 0px #89ABE3FF, 0px 0px 0px #89ABE3FF, 0px 0px 0px #89ABE3FF,
+		0px 0px 0px #89ABE3FF, 0px 0px 0px #89ABE3FF;
 }
